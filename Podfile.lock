@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (5.6.2)
+  - FLEX (4.7.0)
+  - ReSwift (6.1.0)
+  - ReSwiftThunk (2.0.1):
+    - ReSwift (~> 6.0)
+    - ReSwiftThunk/Core (= 2.0.1)
+  - ReSwiftThunk/Core (2.0.1):
+    - ReSwift (~> 6.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - RxSwiftExt (6.0.1):
+    - RxSwiftExt/Core (= 6.0.1)
+    - RxSwiftExt/RxCocoa (= 6.0.1)
+  - RxSwiftExt/Core (6.0.1):
+    - RxSwift (~> 6.0)
+  - RxSwiftExt/RxCocoa (6.0.1):
+    - RxCocoa (~> 6.0)
+    - RxSwiftExt/Core
+  - SkeletonView (1.30.3)
+  - SwiftyBeaver (1.9.6)
+  - SwiftyJSON (5.0.1)
+  - Swinject (2.8.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - FLEX
+  - ReSwift
+  - ReSwiftThunk
+  - RxCocoa
+  - RxSwift
+  - RxSwiftExt
+  - SkeletonView
+  - SwiftyBeaver
+  - SwiftyJSON
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FLEX
+    - ReSwift
+    - ReSwiftThunk
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - SkeletonView
+    - SwiftyBeaver
+    - SwiftyJSON
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  FLEX: bdc9ac7d4a239e3d04c298c01221203257d63a80
+  ReSwift: eab3c01e4279ba81b54a61e4fd6499634d20123a
+  ReSwiftThunk: 7ca5145764be6f30b62db88a52d170133954629e
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
+  SkeletonView: f5b099c708e42a278079a12bcaaf71c303be65a3
+  SwiftyBeaver: c8241b4745aa269a78ca5a022532c6915e948536
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Swinject: b4a11b31992e8668308dc594ba1cb9b3164a37ab
+
+PODFILE CHECKSUM: d318366b557eea4e5cead39700960328304e6162
+
+COCOAPODS: 1.11.3

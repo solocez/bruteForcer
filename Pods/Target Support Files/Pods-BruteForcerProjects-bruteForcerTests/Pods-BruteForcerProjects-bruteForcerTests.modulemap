@@ -1,0 +1,6 @@
+framework module Pods_BruteForcerProjects_bruteForcerTests {
+  umbrella header "Pods-BruteForcerProjects-bruteForcerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
