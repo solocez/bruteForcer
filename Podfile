@@ -11,15 +11,8 @@ def commonPods
   pod 'Alamofire'
   pod 'RxCocoa'
   pod 'RxSwift'
-  pod 'RxSwiftExt'
-  pod 'FLEX'
-  pod 'SkeletonView'
 
-  pod 'ReSwift'
-  pod 'ReSwiftThunk'
-  
   pod 'SwiftyBeaver'
-  pod 'SwiftyJSON'
   pod 'Swinject'
 end
 

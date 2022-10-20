@@ -36,11 +36,8 @@
 		12C0E8D328FEA76A0076F9C1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8B428FEA76A0076F9C1 /* Logger.swift */; };
 		12C0E8D428FEA76A0076F9C1 /* KeyboardDismissableOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8B528FEA76A0076F9C1 /* KeyboardDismissableOnTap.swift */; };
 		12C0E8D528FEA76A0076F9C1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8B728FEA76A0076F9C1 /* UIViewController+Extensions.swift */; };
-		12C0E8D628FEA76A0076F9C1 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8B828FEA76A0076F9C1 /* UIColor+Extensions.swift */; };
 		12C0E8D728FEA76A0076F9C1 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8B928FEA76A0076F9C1 /* BundleExtension.swift */; };
 		12C0E8D828FEA76A0076F9C1 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8BA28FEA76A0076F9C1 /* NSObject+Extensions.swift */; };
-		12C0E8D928FEA76A0076F9C1 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8BB28FEA76A0076F9C1 /* UITableView+Extensions.swift */; };
-		12C0E8DA28FEA76A0076F9C1 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8BC28FEA76A0076F9C1 /* UITableViewCell+Extensions.swift */; };
 		12C0E8ED28FEA7780076F9C1 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8DD28FEA7780076F9C1 /* RestRequest.swift */; };
 		12C0E8EE28FEA7780076F9C1 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8DE28FEA7780076F9C1 /* RestManager.swift */; };
 		12C0E8F528FEA7780076F9C1 /* ViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8E928FEA7780076F9C1 /* ViewModelBase.swift */; };
@@ -109,11 +106,8 @@
 		12C0E8B428FEA76A0076F9C1 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		12C0E8B528FEA76A0076F9C1 /* KeyboardDismissableOnTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardDismissableOnTap.swift; sourceTree = "<group>"; };
 		12C0E8B728FEA76A0076F9C1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		12C0E8B828FEA76A0076F9C1 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		12C0E8B928FEA76A0076F9C1 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		12C0E8BA28FEA76A0076F9C1 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
-		12C0E8BB28FEA76A0076F9C1 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
-		12C0E8BC28FEA76A0076F9C1 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		12C0E8DD28FEA7780076F9C1 /* RestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestRequest.swift; sourceTree = "<group>"; };
 		12C0E8DE28FEA7780076F9C1 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		12C0E8E928FEA7780076F9C1 /* ViewModelBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelBase.swift; sourceTree = "<group>"; };
@@ -315,11 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				12C0E8B728FEA76A0076F9C1 /* UIViewController+Extensions.swift */,
-				12C0E8B828FEA76A0076F9C1 /* UIColor+Extensions.swift */,
 				12C0E8B928FEA76A0076F9C1 /* BundleExtension.swift */,
 				12C0E8BA28FEA76A0076F9C1 /* NSObject+Extensions.swift */,
-				12C0E8BB28FEA76A0076F9C1 /* UITableView+Extensions.swift */,
-				12C0E8BC28FEA76A0076F9C1 /* UITableViewCell+Extensions.swift */,
 				12C0E90428FF0FC40076F9C1 /* String+Extension.swift */,
 			);
 			path = Extensions;
@@ -620,13 +611,10 @@
 				12C0E8CD28FEA76A0076F9C1 /* ScreenFactory.swift in Sources */,
 				12C0E8ED28FEA7780076F9C1 /* RestRequest.swift in Sources */,
 				12C0E8D428FEA76A0076F9C1 /* KeyboardDismissableOnTap.swift in Sources */,
-				12C0E8D628FEA76A0076F9C1 /* UIColor+Extensions.swift in Sources */,
 				12C0E90728FF1AF00076F9C1 /* CredentialsManager.swift in Sources */,
 				12C0E8F528FEA7780076F9C1 /* ViewModelBase.swift in Sources */,
 				12C0E8F828FEA7780076F9C1 /* Loadable.swift in Sources */,
 				12C0E8BD28FEA76A0076F9C1 /* AppComponent.swift in Sources */,
-				12C0E8DA28FEA76A0076F9C1 /* UITableViewCell+Extensions.swift in Sources */,
-				12C0E8D928FEA76A0076F9C1 /* UITableView+Extensions.swift in Sources */,
 				12C0E8BE28FEA76A0076F9C1 /* AppAssembly.swift in Sources */,
 				12C0E8D728FEA76A0076F9C1 /* BundleExtension.swift in Sources */,
 				129B66E928FDE0180057790A /* AppDelegate.swift in Sources */,

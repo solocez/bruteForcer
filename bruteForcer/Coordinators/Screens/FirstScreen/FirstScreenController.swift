@@ -1,6 +1,5 @@
 import RxCocoa
 import RxSwift
-import RxSwiftExt
 
 #warning("Rename Screen")
 final class FirstScreenController: RxViewController, KeyboardDismissableOnTap {

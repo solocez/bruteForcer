@@ -1,10 +1,3 @@
-//
-//  String+Extension.swift
-//  bruteForcer
-//
-//  Created by Zakhar Sukhanov on 18.10.2022.
-//
-
 import Foundation
 
 extension String {
