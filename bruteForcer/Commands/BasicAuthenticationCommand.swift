@@ -20,8 +20,7 @@ struct BasicAuthenticationCommand: Command {
 
     func execute() -> Single<CommandResult> {
         let matherial = user + ":" + password
-        return api.execute(RestRequest(path: ""
-                                       , method: .get
+        return api.execute(RestRequest(method: .get
                                        , headers: ["Authorization": "Basic \(matherial.toBase64())"]
                                        , host: host))
         .flatMap { responseData in

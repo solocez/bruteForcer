@@ -38,19 +38,8 @@ final class RestManager: RestAPI {
 
 extension RestManager {
     func prepareURLRequest(for request: RestRequest) throws -> URLRequest {
-        // Compose the url
-        let fullURL = "\(request.host ?? AppConfiguration.shared.host)\(request.path)"
-        var urlParams: [String: Any] = ["version": request.version, "os": "ios"]
-        var httpBody: Data?
-        // Working with parameters
-        switch request.parameters {
-        case .body(let params)?:
-            httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
-        case .url(let params)?:
-            // Parameters are part of the url
-            urlParams.merge(params, uniquingKeysWith: { _, last in last })
-        default: break
-        }
+        let fullURL = "\(request.host ?? AppConfiguration.shared.host)"
+        var urlParams: [String: Any] = ["version": "1", "os": "ios"]
 
         let queryParams = urlParams.map { element in
             URLQueryItem(name: element.key, value: "\(element.value)")
@@ -66,9 +55,7 @@ extension RestManager {
             throw RestManagerError.incorrectUrl
         }
 
-        // Setup HTTP method
         var urlRequest = URLRequest(url: url)
-        urlRequest.httpBody = httpBody
         urlRequest.httpMethod = request.method.rawValue
         urlRequest.addValue("ios", forHTTPHeaderField: "x-client-os")
         urlRequest.addValue(Bundle.main.appVersion ?? "unknown", forHTTPHeaderField: "x-client-version")
