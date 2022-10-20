@@ -35,7 +35,8 @@ private extension ApplicationCoordinator {
             .subscribe(onNext: { [unowned self] modelResult in
                 switch modelResult {
                 case .success(let fetchedEntities):
-                    self.openSecondScreen(lowerBound: fetchedEntities.0, upperBound: fetchedEntities.1)
+                    // self.openSecondScreen(lowerBound: fetchedEntities.0, upperBound: fetchedEntities.1)
+                    break
                 case .failure(let error):
                     if error.isCancellation {
                         log.debug("OPERATION CANCELLED")

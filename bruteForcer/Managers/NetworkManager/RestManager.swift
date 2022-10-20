@@ -1,6 +1,5 @@
 import Alamofire
 import RxSwift
-import SwiftyJSON
 
 enum RestManagerError: Error {
     case badInput
@@ -40,7 +39,7 @@ final class RestManager: RestAPI {
 extension RestManager {
     func prepareURLRequest(for request: RestRequest) throws -> URLRequest {
         // Compose the url
-        let fullURL = "\(AppConfiguration.shared.host)\(request.path)"
+        let fullURL = "\(request.host ?? AppConfiguration.shared.host)\(request.path)"
         var urlParams: [String: Any] = ["version": request.version, "os": "ios"]
         var httpBody: Data?
         // Working with parameters
@@ -74,6 +73,9 @@ extension RestManager {
         urlRequest.addValue("ios", forHTTPHeaderField: "x-client-os")
         urlRequest.addValue(Bundle.main.appVersion ?? "unknown", forHTTPHeaderField: "x-client-version")
         
+        // Setup Headers
+        request.headers?.forEach { urlRequest.addValue($0.value, forHTTPHeaderField: $0.key) }
+
         return urlRequest
     }
 }

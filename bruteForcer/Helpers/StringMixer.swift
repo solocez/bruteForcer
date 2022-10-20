@@ -13,12 +13,14 @@ struct StringMixer {
             if mixWith(word: item, variantHandler: variantHandler) { return }
         }
     }
+}
 
+private extension StringMixer {
     func mixWith(word: String, variantHandler: (String) -> Bool) -> Bool {
         for (index, _) in initial.enumerated() {
             for (_, charInner) in word.enumerated() {
                 let variant = initial.replace(index, charInner)
-                if variantHandler(variant) { return true}
+                if variantHandler(variant) { return true }
             }
         }
         return false

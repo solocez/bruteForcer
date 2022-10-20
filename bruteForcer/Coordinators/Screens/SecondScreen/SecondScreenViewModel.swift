@@ -22,7 +22,7 @@ final class SecondScreenViewModel: SecondScreenViewModelInterface {
     var upperBound: Int
 
     var commentsNumber: Int {
-        Constants.maximumComments
+        1
     }
     var freshDataArrived = PublishSubject<CommentsState>()
 

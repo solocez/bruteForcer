@@ -35,6 +35,12 @@ final class FirstScreenController: RxViewController, KeyboardDismissableOnTap {
         alphabetLbl.text = "Alphabet:"
         targetHostLbl.text = "Target Host to login:"
 
+        wordListText.layer.borderWidth = 1
+        wordListText.layer.borderColor = UIColor.lightGray.cgColor
+
+        alphabetText.layer.borderWidth = 1
+        alphabetText.layer.borderColor = UIColor.lightGray.cgColor
+    
         actionBtn.setTitle("Force", for: .normal)
     }
 
@@ -42,12 +48,42 @@ final class FirstScreenController: RxViewController, KeyboardDismissableOnTap {
         bindLoader(loadable: viewModel, onCancelled: { [unowned self] in
             self.viewModel.onCancel.onNext(Void())
         })
+        bindCredentialsMatherial()
         bindActionBtn()
     }
 }
 
 private extension FirstScreenController {
+    func bindCredentialsMatherial() {
+        viewModel.words
+            .map { $0.joined(separator: "\n") }
+            .bind(to: wordListText.rx.text)
+            .disposed(by: bag)
+        viewModel.alphabet
+            .map { $0.joined(separator: "\n") }
+            .bind(to: alphabetText.rx.text)
+            .disposed(by: bag)
+        viewModel.host
+            .map { $0.absoluteString }
+            .bind(to: targetHostText.rx.text)
+            .disposed(by: bag)
+    }
+
+    func snapshotDataFromUI() -> FirstScreenViewModelInterface.ActionData {
+        let url = URL(string: targetHostText.text ?? "") ?? URL(fileURLWithPath: "")
+        return (url, wordListText.text.components(separatedBy: "\n") , alphabetText.text.components(separatedBy: "\n"))
+    }
+
     func bindActionBtn() {
-        //continueBtn.rx.tap.bind(to: viewModel.onContinue).disposed(by: bag)
+        #warning("TODO: minimum 2 lines at wordlist")
+        Observable.combineLatest(targetHostText.rx.text.asObservable() , wordListText.rx.text.asObservable(), alphabetText.rx.text.asObservable())
+            .map { !($0.0?.isEmpty ?? true) && !($0.1?.isEmpty ?? true) && !($0.2?.isEmpty ?? true)}
+            .bind(to: actionBtn.rx.isEnabled)
+            .disposed(by: bag)
+        
+        actionBtn.rx.tap
+            .map { [unowned self] _ in self.snapshotDataFromUI() }
+            .bind(to: viewModel.onAction)
+            .disposed(by: bag)
     }
 }

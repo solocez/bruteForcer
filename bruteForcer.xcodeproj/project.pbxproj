@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1266B2DC28FF5CDE00C43ECA /* bruteForcerCredentialsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B2DB28FF5CDE00C43ECA /* bruteForcerCredentialsManagerTests.swift */; };
+		1266B2DF2900056000C43ECA /* BasicAuthenticationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B2DE2900056000C43ECA /* BasicAuthenticationCommand.swift */; };
+		1266B2E12900058E00C43ECA /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B2E02900058E00C43ECA /* Command.swift */; };
 		129B66E928FDE0180057790A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B66E828FDE0180057790A /* AppDelegate.swift */; };
 		129B66EB28FDE0180057790A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B66EA28FDE0180057790A /* SceneDelegate.swift */; };
 		129B66ED28FDE0180057790A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B66EC28FDE0180057790A /* ViewController.swift */; };
@@ -81,6 +84,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1266B2DB28FF5CDE00C43ECA /* bruteForcerCredentialsManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bruteForcerCredentialsManagerTests.swift; sourceTree = "<group>"; };
+		1266B2DE2900056000C43ECA /* BasicAuthenticationCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuthenticationCommand.swift; sourceTree = "<group>"; };
+		1266B2E02900058E00C43ECA /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		129B66E528FDE0180057790A /* bruteForcer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bruteForcer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129B66E828FDE0180057790A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		129B66EA28FDE0180057790A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +178,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1266B2DD2900053D00C43ECA /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				1266B2DE2900056000C43ECA /* BasicAuthenticationCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
 		129B66DC28FDE0170057790A = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +211,7 @@
 		129B66E728FDE0180057790A /* bruteForcer */ = {
 			isa = PBXGroup;
 			children = (
+				1266B2DD2900053D00C43ECA /* Commands */,
 				12C0E8F928FEA7830076F9C1 /* UIControls */,
 				12C0E8DB28FEA7780076F9C1 /* Managers */,
 				12C0E8E828FEA7780076F9C1 /* Protocols */,
@@ -218,6 +233,7 @@
 		129B66FE28FDE01A0057790A /* bruteForcerTests */ = {
 			isa = PBXGroup;
 			children = (
+				1266B2DB28FF5CDE00C43ECA /* bruteForcerCredentialsManagerTests.swift */,
 				129B66FF28FDE01A0057790A /* bruteForcerTests.swift */,
 			);
 			path = bruteForcerTests;
@@ -333,6 +349,7 @@
 		12C0E8B128FEA76A0076F9C1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1266B2E02900058E00C43ECA /* Command.swift */,
 				12C0E8B228FEA76A0076F9C1 /* APIError.swift */,
 				12C0E8B328FEA76A0076F9C1 /* AppConfiguration.swift */,
 				12C0E8B428FEA76A0076F9C1 /* Logger.swift */,
@@ -640,6 +657,7 @@
 				12C0E8D828FEA76A0076F9C1 /* NSObject+Extensions.swift in Sources */,
 				12C0E8C928FEA76A0076F9C1 /* CommentCell.swift in Sources */,
 				12C0E8F628FEA7780076F9C1 /* RxCapable.swift in Sources */,
+				1266B2DF2900056000C43ECA /* BasicAuthenticationCommand.swift in Sources */,
 				12C0E8D328FEA76A0076F9C1 /* Logger.swift in Sources */,
 				12C0E8C228FEA76A0076F9C1 /* FirstScreenController.swift in Sources */,
 				129B66ED28FDE0180057790A /* ViewController.swift in Sources */,
@@ -666,6 +684,7 @@
 				12C0E8BE28FEA76A0076F9C1 /* AppAssembly.swift in Sources */,
 				12C0E8D728FEA76A0076F9C1 /* BundleExtension.swift in Sources */,
 				129B66E928FDE0180057790A /* AppDelegate.swift in Sources */,
+				1266B2E12900058E00C43ECA /* Command.swift in Sources */,
 				12C0E8D228FEA76A0076F9C1 /* AppConfiguration.swift in Sources */,
 				129B66EB28FDE0180057790A /* SceneDelegate.swift in Sources */,
 				12C0E8D128FEA76A0076F9C1 /* APIError.swift in Sources */,
@@ -685,6 +704,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1266B2DC28FF5CDE00C43ECA /* bruteForcerCredentialsManagerTests.swift in Sources */,
 				129B670028FDE01A0057790A /* bruteForcerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

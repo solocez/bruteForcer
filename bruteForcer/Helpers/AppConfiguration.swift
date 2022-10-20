@@ -2,14 +2,11 @@ import Foundation
 
 enum Constants {
     enum Host {
-        static let prod = "https://jsonplaceholder.typicode.com/"
-        static let preprod = "https://jsonplaceholder.typicode.com/"
+        static let prod = "http://httpbin.org/basic-auth/"
+        static let preprod = "http://httpbin.org/basic-auth/"
     }
-
-    static let maximumComments =  500
-    static let intervalToWaitBeforeResult = 3
+    static let defaultSimultaneousOperationsCount = 40
 }
-
 
 protocol AppConfigurable {
     var host: String { get }
