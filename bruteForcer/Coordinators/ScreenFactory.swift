@@ -6,8 +6,4 @@ final class ScreenFactory {
     func createFirstScreen(viewModel: FirstScreenViewModelInterface) -> Presentable {
         FirstScreenController(viewModel: viewModel)
     }
-
-    func createSecondScreen(viewModel: SecondScreenViewModelInterface) -> Presentable {
-        SecondScreenController(viewModel: viewModel)
-    }
 }

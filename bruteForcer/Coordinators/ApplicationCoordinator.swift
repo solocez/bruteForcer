@@ -2,9 +2,7 @@ import RxSwift
 
 final class ApplicationCoordinator: RxBaseCoordinator<Void> {
 
-    var window: UIWindow
-
-    @Inject private var api: RestAPI
+    private var window: UIWindow
 
     init(window: UIWindow) {
         self.window = window
@@ -28,34 +26,26 @@ final class ApplicationCoordinator: RxBaseCoordinator<Void> {
 }
 
 private extension ApplicationCoordinator {
+    #warning("Localisation is required")
     func runMainFlow() {
         let vm = FirstScreenViewModel()
+        let firstScreen = ScreenFactory().createFirstScreen(viewModel: vm)
         vm.modelResult
             .asObservable()
-            .subscribe(onNext: { [unowned self] modelResult in
+            .observe(on: MainScheduler.asyncInstance)
+            .subscribe(onNext: { modelResult in
                 switch modelResult {
-                case .success(let fetchedEntities):
-                    // self.openSecondScreen(lowerBound: fetchedEntities.0, upperBound: fetchedEntities.1)
-                    break
+                case .success(let loginResult):
+                    let msg = loginResult.0 ? "Logged in with \(loginResult.1):\(loginResult.2)" : "Failed to login"
+                    firstScreen.toPresent()?.showAlert(title: "Login Attempt", message: msg)
                 case .failure(let error):
-                    if error.isCancellation {
-                        log.debug("OPERATION CANCELLED")
-                    } else {
-                        log.error(error)
-                    }
+                    log.error(error)
                 }
             }, onError: { error in
                 log.error(error)
             })
             .disposed(by: bag)
-        let firstScreen = ScreenFactory().createFirstScreen(viewModel: vm)
         router.setRootModule(firstScreen)
-    }
-
-    func openSecondScreen(lowerBound: Int, upperBound: Int) {
-        let vm = SecondScreenViewModel(lowerBound: lowerBound, upperBound: upperBound)
-        let secondScreen = ScreenFactory().createSecondScreen(viewModel: vm)
-        router.push(secondScreen)
     }
 
     static func createRouterForHorizontalFlows() -> Router {

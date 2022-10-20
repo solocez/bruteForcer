@@ -10,6 +10,7 @@
 		1266B2DC28FF5CDE00C43ECA /* bruteForcerCredentialsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B2DB28FF5CDE00C43ECA /* bruteForcerCredentialsManagerTests.swift */; };
 		1266B2DF2900056000C43ECA /* BasicAuthenticationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B2DE2900056000C43ECA /* BasicAuthenticationCommand.swift */; };
 		1266B2E12900058E00C43ECA /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B2E02900058E00C43ECA /* Command.swift */; };
+		1266B2E42901FD4A00C43ECA /* LoginAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B2E32901FD4A00C43ECA /* LoginAttempt.swift */; };
 		129B66E928FDE0180057790A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B66E828FDE0180057790A /* AppDelegate.swift */; };
 		129B66EB28FDE0180057790A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B66EA28FDE0180057790A /* SceneDelegate.swift */; };
 		129B66ED28FDE0180057790A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B66EC28FDE0180057790A /* ViewController.swift */; };
@@ -26,15 +27,6 @@
 		12C0E8C128FEA76A0076F9C1 /* FirstScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E89C28FEA76A0076F9C1 /* FirstScreenViewModel.swift */; };
 		12C0E8C228FEA76A0076F9C1 /* FirstScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E89D28FEA76A0076F9C1 /* FirstScreenController.swift */; };
 		12C0E8C328FEA76A0076F9C1 /* FirstScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12C0E89E28FEA76A0076F9C1 /* FirstScreenController.xib */; };
-		12C0E8C428FEA76A0076F9C1 /* LoadingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8A228FEA76A0076F9C1 /* LoadingCellViewModel.swift */; };
-		12C0E8C528FEA76A0076F9C1 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12C0E8A328FEA76A0076F9C1 /* LoadingCell.xib */; };
-		12C0E8C628FEA76A0076F9C1 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8A428FEA76A0076F9C1 /* LoadingCell.swift */; };
-		12C0E8C728FEA76A0076F9C1 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12C0E8A628FEA76A0076F9C1 /* CommentCell.xib */; };
-		12C0E8C828FEA76A0076F9C1 /* CommentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8A728FEA76A0076F9C1 /* CommentCellViewModel.swift */; };
-		12C0E8C928FEA76A0076F9C1 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8A828FEA76A0076F9C1 /* CommentCell.swift */; };
-		12C0E8CA28FEA76A0076F9C1 /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8A928FEA76A0076F9C1 /* SecondScreenController.swift */; };
-		12C0E8CB28FEA76A0076F9C1 /* SecondScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12C0E8AA28FEA76A0076F9C1 /* SecondScreenController.xib */; };
-		12C0E8CC28FEA76A0076F9C1 /* SecondScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8AB28FEA76A0076F9C1 /* SecondScreenViewModel.swift */; };
 		12C0E8CD28FEA76A0076F9C1 /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8AC28FEA76A0076F9C1 /* ScreenFactory.swift */; };
 		12C0E8CE28FEA76A0076F9C1 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8AD28FEA76A0076F9C1 /* CoordinatorFactory.swift */; };
 		12C0E8CF28FEA76A0076F9C1 /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0E8AF28FEA76A0076F9C1 /* RouterImp.swift */; };
@@ -87,6 +79,7 @@
 		1266B2DB28FF5CDE00C43ECA /* bruteForcerCredentialsManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bruteForcerCredentialsManagerTests.swift; sourceTree = "<group>"; };
 		1266B2DE2900056000C43ECA /* BasicAuthenticationCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuthenticationCommand.swift; sourceTree = "<group>"; };
 		1266B2E02900058E00C43ECA /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		1266B2E32901FD4A00C43ECA /* LoginAttempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAttempt.swift; sourceTree = "<group>"; };
 		129B66E528FDE0180057790A /* bruteForcer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bruteForcer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129B66E828FDE0180057790A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		129B66EA28FDE0180057790A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,15 +100,6 @@
 		12C0E89C28FEA76A0076F9C1 /* FirstScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewModel.swift; sourceTree = "<group>"; };
 		12C0E89D28FEA76A0076F9C1 /* FirstScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenController.swift; sourceTree = "<group>"; };
 		12C0E89E28FEA76A0076F9C1 /* FirstScreenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstScreenController.xib; sourceTree = "<group>"; };
-		12C0E8A228FEA76A0076F9C1 /* LoadingCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCellViewModel.swift; sourceTree = "<group>"; };
-		12C0E8A328FEA76A0076F9C1 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
-		12C0E8A428FEA76A0076F9C1 /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
-		12C0E8A628FEA76A0076F9C1 /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
-		12C0E8A728FEA76A0076F9C1 /* CommentCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCellViewModel.swift; sourceTree = "<group>"; };
-		12C0E8A828FEA76A0076F9C1 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
-		12C0E8A928FEA76A0076F9C1 /* SecondScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
-		12C0E8AA28FEA76A0076F9C1 /* SecondScreenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondScreenController.xib; sourceTree = "<group>"; };
-		12C0E8AB28FEA76A0076F9C1 /* SecondScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenViewModel.swift; sourceTree = "<group>"; };
 		12C0E8AC28FEA76A0076F9C1 /* ScreenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenFactory.swift; sourceTree = "<group>"; };
 		12C0E8AD28FEA76A0076F9C1 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		12C0E8AF28FEA76A0076F9C1 /* RouterImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
@@ -186,6 +170,14 @@
 			path = Commands;
 			sourceTree = "<group>";
 		};
+		1266B2E22901FD2D00C43ECA /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				1266B2E32901FD4A00C43ECA /* LoginAttempt.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
 		129B66DC28FDE0170057790A = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +203,7 @@
 		129B66E728FDE0180057790A /* bruteForcer */ = {
 			isa = PBXGroup;
 			children = (
+				1266B2E22901FD2D00C43ECA /* Operations */,
 				1266B2DD2900053D00C43ECA /* Commands */,
 				12C0E8F928FEA7830076F9C1 /* UIControls */,
 				12C0E8DB28FEA7780076F9C1 /* Managers */,
@@ -282,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				12C0E89B28FEA76A0076F9C1 /* FirstScreen */,
-				12C0E89F28FEA76A0076F9C1 /* SecondScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -295,46 +287,6 @@
 				12C0E89E28FEA76A0076F9C1 /* FirstScreenController.xib */,
 			);
 			path = FirstScreen;
-			sourceTree = "<group>";
-		};
-		12C0E89F28FEA76A0076F9C1 /* SecondScreen */ = {
-			isa = PBXGroup;
-			children = (
-				12C0E8A028FEA76A0076F9C1 /* Cells */,
-				12C0E8A928FEA76A0076F9C1 /* SecondScreenController.swift */,
-				12C0E8AA28FEA76A0076F9C1 /* SecondScreenController.xib */,
-				12C0E8AB28FEA76A0076F9C1 /* SecondScreenViewModel.swift */,
-			);
-			path = SecondScreen;
-			sourceTree = "<group>";
-		};
-		12C0E8A028FEA76A0076F9C1 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				12C0E8A128FEA76A0076F9C1 /* LoadingCell */,
-				12C0E8A528FEA76A0076F9C1 /* CommentCell */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		12C0E8A128FEA76A0076F9C1 /* LoadingCell */ = {
-			isa = PBXGroup;
-			children = (
-				12C0E8A228FEA76A0076F9C1 /* LoadingCellViewModel.swift */,
-				12C0E8A328FEA76A0076F9C1 /* LoadingCell.xib */,
-				12C0E8A428FEA76A0076F9C1 /* LoadingCell.swift */,
-			);
-			path = LoadingCell;
-			sourceTree = "<group>";
-		};
-		12C0E8A528FEA76A0076F9C1 /* CommentCell */ = {
-			isa = PBXGroup;
-			children = (
-				12C0E8A628FEA76A0076F9C1 /* CommentCell.xib */,
-				12C0E8A728FEA76A0076F9C1 /* CommentCellViewModel.swift */,
-				12C0E8A828FEA76A0076F9C1 /* CommentCell.swift */,
-			);
-			path = CommentCell;
 			sourceTree = "<group>";
 		};
 		12C0E8AE28FEA76A0076F9C1 /* Router */ = {
@@ -542,11 +494,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				129B66F528FDE01A0057790A /* LaunchScreen.storyboard in Resources */,
-				12C0E8CB28FEA76A0076F9C1 /* SecondScreenController.xib in Resources */,
 				129B66F228FDE01A0057790A /* Assets.xcassets in Resources */,
 				12C0E8C328FEA76A0076F9C1 /* FirstScreenController.xib in Resources */,
-				12C0E8C728FEA76A0076F9C1 /* CommentCell.xib in Resources */,
-				12C0E8C528FEA76A0076F9C1 /* LoadingCell.xib in Resources */,
 				129B66F028FDE0180057790A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,7 +604,6 @@
 			files = (
 				12C0E90028FEA7830076F9C1 /* SpinnerViewController.swift in Sources */,
 				12C0E8D828FEA76A0076F9C1 /* NSObject+Extensions.swift in Sources */,
-				12C0E8C928FEA76A0076F9C1 /* CommentCell.swift in Sources */,
 				12C0E8F628FEA7780076F9C1 /* RxCapable.swift in Sources */,
 				1266B2DF2900056000C43ECA /* BasicAuthenticationCommand.swift in Sources */,
 				12C0E8D328FEA76A0076F9C1 /* Logger.swift in Sources */,
@@ -664,9 +612,8 @@
 				12C0E8D528FEA76A0076F9C1 /* UIViewController+Extensions.swift in Sources */,
 				12C0E8FE28FEA7830076F9C1 /* RxViewController.swift in Sources */,
 				12C0E8C128FEA76A0076F9C1 /* FirstScreenViewModel.swift in Sources */,
-				12C0E8C628FEA76A0076F9C1 /* LoadingCell.swift in Sources */,
-				12C0E8C828FEA76A0076F9C1 /* CommentCellViewModel.swift in Sources */,
 				12C0E8EE28FEA7780076F9C1 /* RestManager.swift in Sources */,
+				1266B2E42901FD4A00C43ECA /* LoginAttempt.swift in Sources */,
 				12C0E90128FEA7830076F9C1 /* RxTableViewCell.swift in Sources */,
 				12C0E8FF28FEA7830076F9C1 /* NibLoadingView.swift in Sources */,
 				12C0E8D028FEA76A0076F9C1 /* Router.swift in Sources */,
@@ -677,7 +624,6 @@
 				12C0E90728FF1AF00076F9C1 /* CredentialsManager.swift in Sources */,
 				12C0E8F528FEA7780076F9C1 /* ViewModelBase.swift in Sources */,
 				12C0E8F828FEA7780076F9C1 /* Loadable.swift in Sources */,
-				12C0E8C428FEA76A0076F9C1 /* LoadingCellViewModel.swift in Sources */,
 				12C0E8BD28FEA76A0076F9C1 /* AppComponent.swift in Sources */,
 				12C0E8DA28FEA76A0076F9C1 /* UITableViewCell+Extensions.swift in Sources */,
 				12C0E8D928FEA76A0076F9C1 /* UITableView+Extensions.swift in Sources */,
@@ -691,11 +637,9 @@
 				12C0E8F728FEA7780076F9C1 /* Presentable.swift in Sources */,
 				12C0E8BF28FEA76A0076F9C1 /* RxBaseCoordinator.swift in Sources */,
 				12C0E8C028FEA76A0076F9C1 /* ApplicationCoordinator.swift in Sources */,
-				12C0E8CA28FEA76A0076F9C1 /* SecondScreenController.swift in Sources */,
 				12C0E90328FF04F80076F9C1 /* StringMixer.swift in Sources */,
 				12C0E8CF28FEA76A0076F9C1 /* RouterImp.swift in Sources */,
 				12C0E8CE28FEA76A0076F9C1 /* CoordinatorFactory.swift in Sources */,
-				12C0E8CC28FEA76A0076F9C1 /* SecondScreenViewModel.swift in Sources */,
 				12C0E90528FF0FC40076F9C1 /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

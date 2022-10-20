@@ -1,7 +1,7 @@
 import Foundation
 import Swinject
 
-public extension Assembler {
+extension Assembler {
     static let shared: Assembler = {
         let container = Container()
         let assembler = Assembler([
@@ -16,19 +16,19 @@ public extension Assembler {
     }
 }
 
-@propertyWrapper public struct Inject<Service> {
+@propertyWrapper struct Inject<Service> {
     private var service: Service
     
-    public init(named name: String? = nil) {
+    init(named name: String? = nil) {
         self.service = Assembler.inject(Service.self, name: name)
     }
     
-    public var wrappedValue: Service {
+    var wrappedValue: Service {
         get { service }
         mutating set { service = newValue }
     }
     
-    public var projectedValue: Inject<Service> {
+    var projectedValue: Inject<Service> {
         get { self }
         mutating set { self = newValue }
     }

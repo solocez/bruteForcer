@@ -64,3 +64,24 @@ extension UIViewController {
         view.layoutIfNeeded()
     }
 }
+
+extension UIViewController {
+    #warning("Localisation is required")
+    func showAlert(title: String, message: String,
+                          actions: [UIAlertAction] = [], completion: (() -> Void)? = nil) {
+        let alertController = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        if actions.isEmpty {
+            let okAction = UIAlertAction(title: "OK", style: .default) { [weak alertController] _ in
+                alertController?.dismiss(animated: true)
+            }
+            alertController.addAction(okAction)
+        } else {
+            actions.forEach { alertController.addAction($0) }
+        }
+        present(alertController, animated: true, completion: completion)
+    }
+}
