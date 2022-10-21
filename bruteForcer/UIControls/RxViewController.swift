@@ -20,7 +20,7 @@ class RxViewController: UIViewController, RxCapable {
 }
 
 extension RxViewController {
-    public func bindLoader(loadable: Loadable, onCancelled: @escaping () -> Void) {
+    func bindLoader(loadable: Loadable, onCancelled: @escaping () -> Void) {
         loadable.isLoading
             .asDriver()
             .drive(onNext: { [weak self] isLoading in

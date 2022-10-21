@@ -46,7 +46,7 @@ final class FirstScreenViewModel: FirstScreenViewModelInterface, ViewModelBase {
     private var isCancelled = false
 
     private let operationsQueue = OperationQueue()
-    private var operationsChunk = DispatchSemaphore(value: Constants.defaultSimultaneousOperationsCount)
+    private var operationsChunk = DispatchSemaphore(value: ProcessInfo.processInfo.activeProcessorCount)
     
     init() {
         operationsQueue.name = "Login Attempts Queue"

@@ -5,7 +5,6 @@ enum Constants {
         static let prod = "http://httpbin.org/basic-auth/"
         static let preprod = "http://httpbin.org/basic-auth/"
     }
-    static let defaultSimultaneousOperationsCount = 40
 }
 
 protocol AppConfigurable {

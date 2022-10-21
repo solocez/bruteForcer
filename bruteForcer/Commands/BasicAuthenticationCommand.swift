@@ -6,9 +6,9 @@ struct BasicAuthenticationCommand: Command {
 
     var bag = DisposeBag()
 
-    let host: String
-    let user: String
-    let password: String
+    private let host: String
+    private let user: String
+    private let password: String
 
     @Inject private var api: RestAPI
 
