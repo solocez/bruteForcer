@@ -39,7 +39,7 @@ final class RestManager: RestAPI {
 extension RestManager {
     func prepareURLRequest(for request: RestRequest) throws -> URLRequest {
         let fullURL = "\(request.host ?? AppConfiguration.shared.host)"
-        var urlParams: [String: Any] = ["version": "1", "os": "ios"]
+        let urlParams: [String: Any] = ["version": "1", "os": "ios"]
 
         let queryParams = urlParams.map { element in
             URLQueryItem(name: element.key, value: "\(element.value)")
