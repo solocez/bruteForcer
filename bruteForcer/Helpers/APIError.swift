@@ -1,11 +1,11 @@
 import Alamofire
 
-protocol APIErrorData {
+protocol APIError {
     var code: Int { get }
     var message: String { get }
 }
 
-final class APIError: LocalizedError, CustomDebugStringConvertible {
+final class AppError: LocalizedError, CustomDebugStringConvertible, APIError {
 
     var code: Int = -1
     var message: String = ""
@@ -19,7 +19,7 @@ final class APIError: LocalizedError, CustomDebugStringConvertible {
     }
 }
 
-private extension APIError {
+private extension AppError {
     func handleError(_ error: Error) {
         switch error {
         case let error as AFError:

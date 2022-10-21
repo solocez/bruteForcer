@@ -17,7 +17,7 @@ protocol FirstScreenViewModelInterface: Loadable {
 final class FirstScreenViewModel: FirstScreenViewModelInterface, ViewModelBase {
     typealias ViewModelResultType = (Bool/*is logged in*/, String/*Login*/, String/*Password*/)
 
-    var modelResult = PublishRelay<Result<ViewModelResultType, APIError>>()
+    var modelResult = PublishRelay<Result<ViewModelResultType, AppError>>()
 
     lazy var words: BehaviorRelay<[String]> = {
         let (wordsLoaded, _) = credentials.loadWordsAlphabet()
